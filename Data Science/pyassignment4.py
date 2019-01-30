@@ -2,7 +2,7 @@
 class HouseHunting:
 
     def __init__(self):
-        self.total_cost = 100000000
+        self.total_cost = 1000000
         self.portion_down_payment = 0
         self.current_savings = 0
         self.monthly_rate = 0.04
@@ -17,7 +17,7 @@ class HouseHunting:
         self.high = 1.0
         self.bs= (self.high + self.low) / 2.0
 
-        self.getDetails()
+        self.getDetails() #go to the next function
 
 
     def getDetails(self):
@@ -26,7 +26,7 @@ class HouseHunting:
         self.monthly_salary = self.annual_salary/12
         self.portion_down_payment = self.total_cost * 0.04
 
-        self.computesavings()
+        self.computesavings() #compute savings
 
     def computesavings(self):
         self.number_of_months =0
@@ -62,7 +62,8 @@ class HouseHunting:
                         self.high = self.bs
                     self.bs = (self.high + self.low) / 2.0
                     self.current_savings = self.annual_salary * self.bs
-                print(' The best savings rate: {0}'.format(self.bs))
+                mine = round(self.bs,2)
+                print(' The best savings rate: {0}'.format(mine))
                 print(" Steps in bisection search :", self.guesses)
 
             
