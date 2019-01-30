@@ -65,8 +65,5 @@ class HouseHunting:
                 print(' The best savings rate: {0}'.format(self.bs))
                 print(" Steps in bisection search :", self.guesses)
 
-            
         #print('You will need to save up for {0} months to pay for the deposit'.format(self.number_of_months))
-
-
-a = HouseHunting()
+a = HouseHunting() #call the class object
